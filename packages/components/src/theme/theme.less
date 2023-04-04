@@ -1,0 +1,134 @@
+@import "./variable.less";
+
+:root {
+  // 页面背景颜色
+  --@{prefix-name}-page-bg-color: @white;
+  // 页面字体颜色
+  --@{prefix-name}-page-text-color: @black;
+  // 页面通用边框颜色
+  --@{prefix-name}-page-border-color: @gray-4;
+
+  // 按钮 primary: 默认状态
+  --@{prefix-name}-btn-primary-color: @blue-1;
+  --@{prefix-name}-btn-primary-border-color: @blue-6;
+  --@{prefix-name}-btn-primary-bg-color: @blue-6;
+  // 按钮 primary: Hover状态
+  --@{prefix-name}-btn-primary-color-hover: @blue-2;
+  --@{prefix-name}-btn-primary-border-color-hover: @blue-8;
+  --@{prefix-name}-btn-primary-bg-color-hover: @blue-8;
+
+  // 按钮 secondary: 默认状态
+  --@{prefix-name}-btn-secondary-color: @gray-1;
+  --@{prefix-name}-btn-secondary-border-color: @gray-6;
+  --@{prefix-name}-btn-secondary-bg-color: @gray-6;
+  // 按钮 secondary: Hover状态
+  --@{prefix-name}-btn-secondary-color-hover: @gray-2;
+  --@{prefix-name}-btn-secondary-border-color-hover: @gray-8;
+  --@{prefix-name}-btn-secondary-bg-color-hover: @gray-8;
+
+  // 按钮 success: 默认状态
+  --@{prefix-name}-btn-success-color: @green-1;
+  --@{prefix-name}-btn-success-border-color: @green-6;
+  --@{prefix-name}-btn-success-bg-color: @green-6;
+  // 按钮 success: Hover状态
+  --@{prefix-name}-btn-success-color-hover: @green-2;
+  --@{prefix-name}-btn-success-border-color-hover: @green-8;
+  --@{prefix-name}-btn-success-bg-color-hover: @green-8;
+
+
+  // 按钮 warning: 默认状态
+  --@{prefix-name}-btn-warning-color: @gold-1;
+  --@{prefix-name}-btn-warning-border-color: @gold-6;
+  --@{prefix-name}-btn-warning-bg-color: @gold-6;
+  // 按钮 warning: Hover状态
+  --@{prefix-name}-btn-warning-color-hover: @gold-2;
+  --@{prefix-name}-btn-warning-border-color-hover: @gold-8;
+  --@{prefix-name}-btn-warning-bg-color-hover: @gold-8;
+
+  // 按钮 danger: 默认状态
+  --@{prefix-name}-btn-danger-color: @red-1;
+  --@{prefix-name}-btn-danger-border-color: @red-6;
+  --@{prefix-name}-btn-danger-bg-color: @red-6;
+  // 按钮 danger: Hover状态
+  --@{prefix-name}-btn-danger-color-hover: @red-2;
+  --@{prefix-name}-btn-danger-border-color-hover: @red-8;
+  --@{prefix-name}-btn-danger-bg-color-hover: @red-8;
+
+  // 按钮 primary-outline: 默认状态
+  --@{prefix-name}-btn-primary-outline-color: @blue-6;
+  --@{prefix-name}-btn-primary-outline-border-color: @blue-6;
+  --@{prefix-name}-btn-primary-outline-bg-color: @blue-1;
+  // 按钮 primary-outline: Hover状态
+  --@{prefix-name}-btn-primary-outline-color-hover: @blue-8;
+  --@{prefix-name}-btn-primary-outline-border-color-hover: @blue-8;
+  --@{prefix-name}-btn-primary-outline-bg-color-hover: @blue-2;
+
+  // 按钮 secondary-outline: 默认状态
+  --@{prefix-name}-btn-secondary-outline-color: @gray-6;
+  --@{prefix-name}-btn-secondary-outline-border-color: @gray-6;
+  --@{prefix-name}-btn-secondary-outline-bg-color: @gray-1;
+  // 按钮 secondary-outline: Hover状态
+  --@{prefix-name}-btn-secondary-outline-color-hover: @gray-8;
+  --@{prefix-name}-btn-secondary-outline-border-color-hover: @gray-8;
+  --@{prefix-name}-btn-secondary-outline-bg-color-hover: @gray-2;
+  
+
+  // 按钮 success-outline: 默认状态
+  --@{prefix-name}-btn-success-outline-color: @green-6;
+  --@{prefix-name}-btn-success-outline-border-color: @green-6;
+  --@{prefix-name}-btn-success-outline-bg-color: @green-1;
+  // 按钮 success-outline: Hover状态
+  --@{prefix-name}-btn-success-outline-color-hover: @green-8;
+  --@{prefix-name}-btn-success-outline-border-color-hover: @green-8;
+  --@{prefix-name}-btn-success-outline-bg-color-hover: @green-2;
+
+  // 按钮 warning-outline: 默认状态
+  --@{prefix-name}-btn-warning-outline-color: @gold-6;
+  --@{prefix-name}-btn-warning-outline-border-color: @gold-6;
+  --@{prefix-name}-btn-warning-outline-bg-color: @gold-1;
+  // 按钮 warning-outline: Hover状态
+  --@{prefix-name}-btn-warning-outline-color-hover: @gold-8;
+  --@{prefix-name}-btn-warning-outline-border-color-hover: @gold-8;
+  --@{prefix-name}-btn-warning-outline-bg-color-hover: @gold-2;
+
+  // 按钮 danger-outline: 默认状态
+  --@{prefix-name}-btn-danger-outline-color: @red-6;
+  --@{prefix-name}-btn-danger-outline-border-color: @red-6;
+  --@{prefix-name}-btn-danger-outline-bg-color: @red-1;
+  // 按钮 danger-outline: Hover状态
+  --@{prefix-name}-btn-danger-outline-color-hover: @red-8;
+  --@{prefix-name}-btn-danger-outline-border-color-hover: @red-8;
+  --@{prefix-name}-btn-danger-outline-bg-color-hover: @red-2;
+
+
+  // 消息 message info 状态
+  --@{prefix-name}-message-info-bg-color: @blue-1;
+  --@{prefix-name}-message-info-text-color: @blue-8;
+  --@{prefix-name}-message-info-border-color: @blue-2;
+  // 消息 message success 状态
+  --@{prefix-name}-message-success-bg-color: @green-1;
+  --@{prefix-name}-message-success-text-color: @green-8;
+  --@{prefix-name}-message-success-border-color: @green-2;
+  // 消息 message warn 状态
+  --@{prefix-name}-message-warn-bg-color: @gold-1;
+  --@{prefix-name}-message-warn-text-color: @gold-8;
+  --@{prefix-name}-message-warn-border-color: @gold-2;
+  // 消息 message error 状态
+  --@{prefix-name}-message-error-bg-color: @red-1;
+  --@{prefix-name}-message-error-text-color: @red-8;
+  --@{prefix-name}-message-error-border-color: @red-2;
+
+  &.dark-theme {
+    --@{prefix-name}-page-bg-color: @cyan-10;
+
+    // primary btn
+    --@{prefix-name}-btn-primary-color: @cyan-1;
+    --@{prefix-name}-btn-primary-border-color: @cyan-6;
+    --@{prefix-name}-btn-primary-bg-color: @cyan-6;
+
+    // primary btn hover
+    --@{prefix-name}-btn-primary-color-hover: @cyan-2;
+    --@{prefix-name}-btn-primary-border-color-hover: @cyan-8;
+    --@{prefix-name}-btn-primary-bg-color-hover: @cyan-8;
+  }
+}

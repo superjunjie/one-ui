@@ -1,0 +1,28 @@
+@import '../../theme/variable.less';
+
+@keyframes loadingCircle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.@{prefix-name}-icon {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  text-align: center;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  &-rotate {
+    animation: loadingCircle 0.6s infinite linear;
+  }
+  &::before {
+    content: '\00a0';
+  }
+  > svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+

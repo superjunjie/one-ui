@@ -1,0 +1,12 @@
+export type ButtonType =
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'warning'
+  | 'danger'
+  | 'primary-outline'
+  | 'secondary-outline'
+  | 'success-outline'
+  | 'warning-outline'
+  | 'danger-outline'
+  | 'text'
